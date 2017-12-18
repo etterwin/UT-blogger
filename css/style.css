@@ -53,6 +53,9 @@ body {
   -webkit-box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.15); }
+  @media screen and (max-width: 768px) {
+    .main {
+      width: 95%; } }
 
 .container {
   display: flex;
@@ -73,27 +76,45 @@ body {
 .data {
   font-size: 21px;
   color: #555555; }
+  @media screen and (max-width: 768px) {
+    .data {
+      font-size: 18px; } }
 
 .username {
   font-size: 24px;
   font-weight: bold;
   color: #333333; }
+  @media screen and (max-width: 768px) {
+    .username {
+      font-size: 20px; } }
 
 .caption {
   font-size: 48px;
   font-weight: bold;
   max-width: 90%;
   margin: 15px auto; }
+  @media screen and (max-width: 768px) {
+    .caption {
+      font-size: 32px; } }
+  @media screen and (max-width: 500px) {
+    .caption {
+      font-size: 26px; } }
 
 .caption--small {
   font-size: 22px;
   color: #333333;
   margin: 0 auto 15px; }
+  @media screen and (max-width: 768px) {
+    .caption--small {
+      font-size: 20px; } }
 
 .text {
   margin: 15px auto;
   color: #222222;
   font-size: 18px; }
+  @media screen and (max-width: 768px) {
+    .text {
+      font-size: 16px; } }
 
 .line {
   background: #facb66;
@@ -136,12 +157,18 @@ body {
   color: #fd6261;
   font-size: 24px;
   margin: 15px auto; }
+  @media screen and (max-width: 768px) {
+    .text--bold {
+      font-size: 18px; } }
 
 .text--centre {
   margin: 15px auto;
   text-align: center;
   font-weight: bold;
   font-size: 24px; }
+  @media screen and (max-width: 768px) {
+    .text--centre {
+      font-size: 18px; } }
 
 .text-hint {
   max-width: 500px;
@@ -153,6 +180,9 @@ body {
   max-width: 900px;
   width: 100%;
   margin: 15px auto 20px; }
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 95%; } }
 
 .user-text {
   max-width: 900px;
@@ -220,7 +250,9 @@ body {
 
 .guest-text {
   color: #333333;
-  font-size: 18px; }
+  font-size: 18px;
+  word-wrap: break-word;
+  padding: 5px 0 15px; }
 
 .date {
   padding-left: 10px; }

@@ -59,6 +59,9 @@ body {
   -webkit-box-shadow: 0 10px 5px 0 rgba(0,0,0,0.15);
   -moz-box-shadow: 0 10px 5px 0 rgba(0,0,0,0.15);
   box-shadow: 0 10px 5px 0 rgba(0,0,0,0.15);
+  @media screen and (max-width: 768px){
+    width: 95%;
+  }
 }
 
 .container {
@@ -83,12 +86,18 @@ body {
 .data {
   font-size: 21px;
   color: #555555;
+  @media screen and (max-width: 768px){
+    font-size: 18px;
+  }
 }
 
 .username {
   font-size: 24px;
   font-weight: bold;
   color: #333333;
+  @media screen and (max-width: 768px){
+    font-size: 20px;
+  }
 }
 
 .caption {
@@ -96,18 +105,30 @@ body {
   font-weight: bold;
   max-width: 90%;
   margin: 15px auto;
+  @media screen and (max-width: 768px){
+    font-size: 32px;
+  }
+  @media screen and (max-width: 500px){
+    font-size: 26px;
+  }
 }
 
 .caption--small {
   font-size: 22px;
   color: #333333;
   margin: 0 auto 15px;
+  @media screen and (max-width: 768px){
+    font-size: 20px;
+  }
 }
 
 .text {
   margin: 15px auto;
   color: #222222;
   font-size: 18px;
+  @media screen and (max-width: 768px){
+    font-size: 16px;
+  }
 }
 
 .line {
@@ -157,6 +178,9 @@ body {
   color: #fd6261;
   font-size: 24px;
   margin: 15px auto;
+  @media screen and (max-width: 768px){
+    font-size: 18px;
+  }
 }
 
 .text--centre {
@@ -164,6 +188,9 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
+  @media screen and (max-width: 768px){
+    font-size: 18px;
+  }
 }
 
 .text-hint {
@@ -177,6 +204,9 @@ body {
   max-width: 900px;
   width: 100%;
   margin: 15px auto 20px;
+  @media screen and (max-width: 768px){
+    width: 95%;
+  }
 }
 
 .user-text {
@@ -256,6 +286,8 @@ body {
 .guest-text {
   color: #333333;
   font-size: 18px;
+  word-wrap: break-word;
+  padding: 5px 0 15px;
 }
 
 .date {

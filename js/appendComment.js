@@ -1,4 +1,5 @@
 function addComment() {
+
     let text = document.getElementById('user_text').value;
 
     let Data = new Date();
@@ -15,7 +16,5 @@ function addComment() {
     document.getElementById('time').append(Hour+':'+Minutes);
     document.getElementById('date').append(Day+'/'+Month+'/'+Year);
     document.getElementById('comment').classList.toggle('comment');
-
-    let text = document.getElementById('user_text').value;
 
 }
