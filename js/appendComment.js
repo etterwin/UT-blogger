@@ -10,16 +10,16 @@ function addComment() {
         let Data = new Date();
 
         let Year = Data.getFullYear();
-        let Month = Data.getMonth();
-        let Day = Data.getDay();
+        let Month = Data.getMonth() + 1;
 
         let Hour = Data.getHours();
         let Minutes = Data.getMinutes();
 
         document.getElementById('text').append(text);
         document.getElementById('time').append(Hour+':'+Minutes);
-        document.getElementById('date').append(Day+'/'+Month+'/'+Year);
+        document.getElementById('date').append(+Month+'/'+Year);
         document.getElementById('comment').classList.add('comment').remove('comment--none');
+
     } else {
         return false;
     }

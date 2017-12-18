@@ -165,6 +165,8 @@ body {
 
 .email-link {
   margin: auto;
+  position: relative;
+  cursor: pointer;
   text-transform: uppercase;
   color: white;
   font-weight: bold;
@@ -220,7 +222,8 @@ body {
 
 .cmt-wrapper {
   margin: 10px auto 15px;
-  display: flex; }
+  display: flex;
+  position: relative; }
 
 .cmt-link {
   margin: auto 0 auto auto;
@@ -229,9 +232,19 @@ body {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  background: #ffd300; }
+  background: #ffd300;
+  cursor: pointer; }
   .cmt-link:hover {
     opacity: 0.7; }
+
+.add-alert {
+  position: absolute;
+  right: 170px;
+  top: calc(50% - 12px);
+  padding: 3px 6px;
+  background: #fd6261;
+  border-radius: 4px;
+  color: white; }
 
 .comment--none {
   display: none; }
