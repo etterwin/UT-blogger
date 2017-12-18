@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <!-- script -->
-
+    <script src="js/appendComment.js"></script>
 
 </head>
 <body>
@@ -55,7 +55,10 @@
         </ul>
 
         <input type="email" class="field" />
-        <a href="#" class="email-link">Send</a>
+        <div class="btn-wrapper">
+            <a href="#" class="email-link">Send</a>
+        </div>
+
 
         <span class="line"></span>
 
@@ -74,13 +77,38 @@
     <div class="content">
 
         <textarea id="user_text" class="user-text" placeholder="Enter your comment..."></textarea>
-        <a>Comment</a>
+        <div class="cmt-wrapper">
+            <a class="cmt-link" onclick="addComment(this)">Comment</a>
+        </div>
 
-        <div class="comments__container" id="comments"></div>
+        <div class="comments__container">
+
+            <div class="comment--none" id="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time"></span>
+                        <span id="date" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text"></p>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
+    <footer class="footer">
+        <p class="footer-text">2017 | EverythingApplePro</p>
+    </footer>
+
 </div>
+
+<!-- script -->
+<script src="js/appendComment.js"></script>
 
 </body>
 </html>
