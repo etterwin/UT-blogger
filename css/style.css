@@ -19,10 +19,16 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ffffff',GradientType=0 ); }
 
 .header-en {
-  background: url("../assets/pictures/img/header-en.jpg") no-repeat 50% -100px;
+  background: url("../assets/pictures/img/header.jpg") no-repeat 50% 0;
   width: 100%;
   min-height: 900px;
   background-size: cover; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .header-en {
+      min-height: 850px; } }
+  @media screen and (max-width: 767px) {
+    .header-en {
+      background: url("../assets/pictures/img/header-mobil.jpg") no-repeat 50% 0; } }
 
 .overlay {
   background: white;
@@ -31,18 +37,21 @@ body {
   background: linear-gradient(to top, white 50%, rgba(255, 255, 255, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
   position: absolute;
-  top: 530px;
+  top: 430px;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 500px;
   z-index: 1; }
 
 .wrapper {
   position: absolute;
-  top: 580px;
+  top: 380px;
   z-index: 2;
   width: 100%;
   height: 100%; }
+  @media screen and (max-width: 767px) {
+    .wrapper {
+      top: 180px; } }
 
 .main {
   max-width: 900px;
@@ -55,23 +64,37 @@ body {
   box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.15); }
   @media screen and (max-width: 768px) {
     .main {
-      width: 95%; } }
+      width: 95%;
+      padding: 30px; } }
 
 .container {
-  display: flex;
-  max-height: 100px; }
+  display: flex; }
+  @media screen and (max-width: 400px) {
+    .container {
+      display: block; } }
 
 .avatar {
   height: 70px;
   width: 70px;
   margin: auto 20px auto 0;
   display: inline-block; }
+  @media screen and (max-width: 400px) {
+    .avatar {
+      display: block;
+      margin: 10px auto;
+      height: 120px;
+      width: 120px; } }
 
 .data-wrapper {
   display: inline-block;
   width: 80%;
   margin: auto auto auto 0;
   padding: 20px 0; }
+  @media screen and (max-width: 400px) {
+    .data-wrapper {
+      display: block;
+      margin: 10px auto;
+      width: 100%; } }
 
 .data {
   font-size: 21px;
