@@ -177,9 +177,9 @@ body {
 }
 
 .btn-wrapper {
-  max-width: 300px;
   margin: 10px auto 15px;
   display: flex;
+  position: relative;
 }
 
 .email-link {
@@ -192,6 +192,8 @@ body {
   background: #00e26c;
   padding: 10px 20px;
   border-radius: 4px;
+  outline: none;
+  border: 0;
   &:hover {
     opacity: 0.7;
   }
@@ -266,14 +268,50 @@ body {
   }
 }
 
+.add,
+.email {
+  display: none;
+}
+
 .add-alert {
   position: absolute;
-  right: 170px;
   top: calc(50% - 12px);
   padding: 3px 6px;
   background: #fd6261;
   border-radius: 4px;
   color: white;
+  animation: actionAlert 0.2s ease-in-out 0.8s forwards;
+  &:after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 4px;
+    border-radius: 4px;
+    border: 8px solid transparent;
+    border-left: 10px solid #fd6261;
+  }
+}
+
+.add-alert {
+  right: 140px;
+}
+
+.email-alert {
+  text-align: center;
+  color: #fd6261;
+  font-size: 14px;
+  margin: 10px auto 15px;
+  width: 100%;
+  animation: actionAlert 0.2s ease-in-out 0.8s forwards;
+}
+
+@keyframes actionAlert {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
 .comment--none {
